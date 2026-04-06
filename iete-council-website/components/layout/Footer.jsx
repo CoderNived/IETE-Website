@@ -41,14 +41,22 @@ export default function Footer() {
           {/* Column 1 — Brand */}
           <div>
             <Link href="/" className="footer-logo-wrap">
-              <div className="footer-logo-box">
-                <span className="footer-logo-text">IETE</span>
-              </div>
-              <div>
-                <div className="footer-brand-name">IETE Council</div>
-                <div className="footer-brand-sub">Student Chapter</div>
-              </div>
-            </Link>
+  <img
+    src="/images/logos/IETE-Logo1.jpg"
+    alt="IETE Logo"
+    style={{
+      height:     "42px",
+      width:      "auto",
+      objectFit:  "contain",
+      flexShrink: 0,
+      filter:     "brightness(0) invert(1)",  /* makes it white for dark footer */
+    }}
+  />
+  <div>
+    <div className="footer-brand-name">IETE Council</div>
+    <div className="footer-brand-sub">Student Chapter</div>
+  </div>
+</Link>
 
             <p className="footer-desc">
               Fostering innovation, technical excellence, and professional
